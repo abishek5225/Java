@@ -1,17 +1,15 @@
-package Persistance;
-import java.io.*;
+import java.io.Serializable;
 
-public class Student implements Serializable{
-    public static void main(String[] args){
+public class Student implements Serializable {
     private String name;
     private int age;
 
-    public Students(String name, int age){
-        this.name=name;
-        this.age=age;
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
-    public void display(){
-        System.out.println("Name:"+name+ "age:"+age);
+
+    public void display() {
+        System.out.println("Name: " + name + ", Age: " + age);
     }
-}
 }
